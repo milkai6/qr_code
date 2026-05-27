@@ -3,47 +3,172 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <title></title>
 
-    <style>
+<meta charset="utf-8" />
 
-        body {
+<meta name="viewport"
+      content="width=device-width, initial-scale=1" />
 
-            font-family: Arial;
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 30px;
+<title>二维码内容</title>
 
-            line-height: 1.8;
+<style>
 
-            background: #f5f5f5;
-        }
+* {
 
-        .box {
+    box-sizing: border-box;
+}
 
-            background: white;
+body {
 
-            padding: 40px;
+    margin: 0;
 
-            border-radius: 10px;
+    padding: 20px;
 
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+    background: #f5f5f5;
 
-        h1 {
+    font-family:
+        "Microsoft YaHei",
+        "PingFang SC",
+        Arial,
+        sans-serif;
 
-            color: #333;
-        }
+    line-height: 1.8;
+}
 
-        pre {
+.box {
 
-            white-space: pre-wrap;
+    max-width: 1100px;
 
-            font-size: 18px;
-        }
+    margin: 30px auto;
 
-    </style>
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.top-area {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+.company-img {
+
+    width: 260px;
+
+    border-radius: 12px;
+
+    flex-shrink: 0;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.content-area {
+
+    flex: 1;
+
+    min-width: 280px;
+}
+
+h1 {
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+
+    color: #222;
+
+    font-size: 34px;
+
+    font-weight: bold;
+}
+
+hr {
+
+    border: none;
+
+    height: 1px;
+
+    background: #e5e5e5;
+
+    margin-bottom: 25px;
+}
+
+pre {
+
+    margin: 0;
+
+    white-space: pre-wrap;
+
+    word-break: break-word;
+
+    font-size: 22px;
+
+    color: #333;
+
+    font-family:
+        "Microsoft YaHei",
+        "PingFang SC",
+        Arial,
+        sans-serif;
+}
+
+/* 手机端优化 */
+
+@media (max-width: 768px) {
+
+    body {
+
+        padding: 10px;
+    }
+
+    .box {
+
+        padding: 20px;
+    }
+
+    .top-area {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .company-img {
+
+        width: 100%;
+
+        max-width: 320px;
+    }
+
+    .content-area {
+
+        width: 100%;
+    }
+
+    h1 {
+
+        font-size: 26px;
+
+        text-align: center;
+    }
+
+    pre {
+
+        font-size: 18px;
+    }
+}
+
+</style>
 
 </head>
 
@@ -51,19 +176,21 @@
 
 <div class="box">
 
-<div class="top-area">
+    <div class="top-area">
 
-    <img
-        src="company.png"
-        class="company-img">
+        <img
+            src="company.png"
+            class="company-img">
 
-    <div class="content-area">
+        <div class="content-area">
 
-        <h1></h1>
+            <h1>
+                第五届中央企业熠星创新创意大赛
+            </h1>
 
-        <hr>
+            <hr>
 
-        <pre>
+            <pre>
 
 预祝《严肃文档的可信与可算智能交互范式》荣获第五届熠星大赛人工智能赛道一等奖！
 
@@ -73,9 +200,10 @@
 期待与电力及其他行业同仁 共创文本AI新业态。
 </pre>
 
+        </div>
+
     </div>
 
-</div>
 </div>
 
 </body>
