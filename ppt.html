@@ -43,64 +43,84 @@ body {
 
     background: white;
 
-    padding: 40px;
+    padding: 30px;
 
     border-radius: 16px;
 
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
-.top-area {
+/* 顶部图片 */
+
+.top-banner {
+
+    width: 100%;
+
+    margin-bottom: 40px;
+}
+
+.top-banner img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 12px;
+}
+
+/* 主体区域 */
+
+.main-area {
 
     display: flex;
 
-    align-items: flex-start;
-
     gap: 40px;
+
+    align-items: flex-start;
 
     flex-wrap: wrap;
 }
 
-.company-img {
+/* 左侧微信二维码 */
 
-    width: 260px;
+.wx-area {
+
+    width: 220px;
+
+    text-align: center;
+
+    flex-shrink: 0;
+}
+
+.wx-area img {
+
+    width: 100%;
 
     border-radius: 12px;
 
-    flex-shrink: 0;
-
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
+
+.wx-title {
+
+    margin-top: 15px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+/* 右侧文字 */
 
 .content-area {
 
     flex: 1;
 
-    min-width: 280px;
-}
-
-h1 {
-
-    margin-top: 0;
-
-    margin-bottom: 15px;
-
-    color: #222;
-
-    font-size: 34px;
-
-    font-weight: bold;
-}
-
-hr {
-
-    border: none;
-
-    height: 1px;
-
-    background: #e5e5e5;
-
-    margin-bottom: 25px;
+    min-width: 300px;
 }
 
 pre {
@@ -111,7 +131,7 @@ pre {
 
     word-break: break-word;
 
-    font-size: 22px;
+    font-size: 24px;
 
     color: #333;
 
@@ -136,30 +156,21 @@ pre {
         padding: 20px;
     }
 
-    .top-area {
+    .main-area {
 
         flex-direction: column;
 
         align-items: center;
     }
 
-    .company-img {
+    .wx-area {
 
-        width: 100%;
-
-        max-width: 320px;
+        width: 220px;
     }
 
     .content-area {
 
         width: 100%;
-    }
-
-    h1 {
-
-        font-size: 26px;
-
-        text-align: center;
     }
 
     pre {
@@ -176,19 +187,35 @@ pre {
 
 <div class="box">
 
-    <div class="top-area">
+    <!-- 顶部横幅图 -->
 
-        <img
-            src="top-text.png"
-            class="company-img">
+    <div class="top-banner">
+
+        <img src="top-text.png">
+
+    </div>
+
+    <!-- 主体 -->
+
+    <div class="main-area">
+
+        <!-- 左侧微信二维码 -->
+
+        <div class="wx-area">
+
+            <img src="WeiX.png">
+
+            <div class="wx-title">
+
+                扫码添加微信
+
+            </div>
+
+        </div>
+
+        <!-- 右侧文字 -->
 
         <div class="content-area">
-
-            <h1>
-                第五届中央企业熠星创新创意大赛
-            </h1>
-
-            <hr>
 
             <pre>
 
